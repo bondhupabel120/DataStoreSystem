@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1 style="margin-left: 500px">8 Puzzle Problem Game</h1>
+
+    <div style="margin-left: 150px;margin-right: 200px;float:left;">
+        <h3 style="color: green;margin-left: 70px">Goal State</h3>
+        <table id="tbl1">
+            <tr>
+                <td id="1" onclick="goal(this)">1</td>
+                <td id="2" onclick="goal(this)">2</td>
+                <td id="3" onclick="goal(this)">3</td>
+            </tr>
+            <tr>
+                <td id="4" onclick="goal(this)">4</td>
+                <td id="5" onclick="goal(this)">5</td>
+                <td id="6" onclick="goal(this)">6</td>
+            </tr>
+            <tr>
+                <td id="7" onclick="goal(this)">7</td>
+                <td id="8" onclick="goal(this)">8</td>
+                <td id="9" onclick="goal(this)"> </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div style="margin-right: 200px;float: left">
+        <h3 style="color: #007bff;margin-left: 60px">Initial State</h3>
+        <table id="tbl2">
+            <tr>
+                <td id="10" onclick="move(this)">1</td>
+                <td id="11" onclick="move(this)">2</td>
+                <td id="12" onclick="move(this)">3</td>
+            </tr>
+            <tr>
+                <td id="13" onclick="move(this)">4</td>
+                <td id="14" onclick="move(this)">6</td>
+                <td id="15" onclick="move(this)">5</td>
+            </tr>
+            <tr>
+                <td id="16" onclick="move(this)">8</td>
+                <td id="17" onclick="move(this)">7</td>
+                <td id="18" onclick="move(this)"> </td>
+            </tr>
+        </table>
+        <button onclick="reset()">Pattern</button>
+    </div>
+
+    <div style="margin-top: 0px">
+        <h3 style="color: #34ce57;">AI Solve<br>
+            <button onclick="solve()">Click for AI Solve</button>
+        </h3>
+        <table id="tbl3">
+            <tr>
+                <td id="19" onclick="solve(this)">1</td>
+                <td id="20" onclick="solve(this)">2</td>
+                <td id="21" onclick="solve(this)">3</td>
+            </tr>
+            <tr>
+                <td id="22" onclick="solve(this)">4</td>
+                <td id="23" onclick="solve(this)">6</td>
+                <td id="24" onclick="solve(this)">5</td>
+            </tr>
+            <tr>
+                <td id="25" onclick="solve(this)">8</td>
+                <td id="26" onclick="solve(this)">7</td>
+                <td id="27" onclick="solve(this)"> </td>
+            </tr>
+        </table>
+    </div>
+
+<!--<center>-->
+    <!--<input type="submit" class="btn" id="start-clock" value="Click here to start timer" name="submit" onClick="startClock()"/>-->
+    <!--<div id="timer">0</div>-->
+    <!--<input type="submit" id="stop-clock" value="Click here to stop and reset the timer" name="submit" onClick="stopClock()"/>-->
+<!--</center>-->
+<!--<br>-->
+
+
+
+
+<center>
+    <div>Hour: <span id="hour"></span></div>
+    <div>Minute: <span id="minute"></span></div>
+    <div>Second: <span id="seconds"></span></div>
+    <br>
+
+    <button id="start-btn" class="time-btn-one">Start</button>
+    <button id="stop-btn" class="time-btn-two">Pause</button>
+    <button id="reset-btn" class="time-btn-three">Reset</button>
+</center>
+<br>
+<br>
+
+<center>
+    <a href="details.html">For Details</a>
+    <br>
+    <br>
+    <div class="knk" style="color: #495057; position:static; font-family:sans-serif; text-decoration:none; bottom:0px; right:20px;"><span class="fa fa-heart fa-2x icon-color"></span>This is a interesting Game<span class="fa fa-heart fa-2x icon-color"></span></div>
+</center>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="goal.js"></script>
+    <script src="aisolve.js"></script>
+</body>
+</html>

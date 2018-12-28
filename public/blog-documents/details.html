@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: whitesmoke">
+
+    <a href="index.html" class="btn btn-success m-5 float-left">Back</a>
+    <a href="team.html" class="btn btn-success m-5 float-right">Next</a>
+
+    <div class="container float-left" style="margin-left: 150px;margin-right: 100px">
+        <div class="row">
+            <div class="">
+                <h3><b>8 Puzzle Problem :</b></h3>
+                <p>The 8 puzzle consists of eight numbered, movable tiles set in a 3x3 frame. One cell of the frame is always empty thus making it possible to move an adjacent numbered tile into the empty cell. Such a puzzle is illustrated in following diagram.
+
+                    The program is to change the initial configuration into the goal configuration. A solution to the problem is an appropriate sequence of moves, such as “move tiles 5 to the right, move tile 7 to the left ,move tile 6 to the down, etc”.</p>
+            </div>
+
+            <h3 class="mt-5"><b>Searching for a Solution :</b></h3>
+            <p>This problem can be solved by searching for a solution, which is a sequence of actions (tile moves) that leads from the initial state to the goal state. Two possible states of the 8-puzzle are shown in figure 1. The state on the right is a typical goal state. The state on the left is a configuration that represents a worst case: transforming this state into the goal state requires at least 31 actions, which is the diameter of the search space. For search algorithms the problem is often to find the shortest solution, that is, one which consists of the least number of tile moves.</p>
+            <img src="images/a.png" alt="" class="m-auto">
+
+        </div>
+    </div>
+
+    <center style="margin-left: 670px" class="float-left">
+        <hr/>
+        <a href="team.html" class="btn btn-outline-dark">Our Team</a>
+        <hr/>
+    </center>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
